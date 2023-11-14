@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inp1">
+    <input type="date" id="inp2">
+    <select id="inp3">
+        <option value="">Select Gender</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+<button onclick="clickme()">button</button>
+
+</body>
+</html>
+
+<script>
+    let inputtag1 = document.getElementById("inp1");
+    let inputtag2 = document.getElementById("inp2");
+    let selecttag = document.getElementById("inp3");
+
+    function clickme()
+    {
+        alert((selecttag.value)+
+        (inputtag1.value)+
+        (inputtag2.value))
+    }
+
+</script>

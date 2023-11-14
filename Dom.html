@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1 id="ravi">Dom-1</h1>
+    <input type="text" id="input">
+    <button onclick="functiontest()"></button>
+</body>
+</html>
+
+<script>
+    let input = document.getElementById("input").value
+    
+    function functiontest(){
+        let ravi = document.getElementById("ravi");
+        ravi.innertext = `ravi : ${input.value}`;
+        alert("ravi change Succsesfully")
+
+// 
+    }
+</script>
+
